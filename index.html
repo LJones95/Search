@@ -2,22 +2,39 @@
 <html lang="en">
     <head>
         <title>Search</title>
+        <link href="static/styles.css" type="text/css" rel="stylesheet">
     </head>
     <body>
         <div>
-            <nav>
-                <a href="/"><span>Search</span></a>
-                <ul>
-                    <li><a href="/image.html">Image search</a></li>
-                    <li><a href="/advanced.html">Advanced search</a></li>
-                </ul>
+            <nav class="navbar">
+                <div class="div-container">
+                    <div class="a-container">
+                        <a class="a" href="image.html">Images</a>
+                    </div>
+                    <div class="a-container">
+                        <a class="a" href="advanced.html">Advanced</a>
+                    </div>
+                </div>
             </nav>
         </div>
-        <div>
+        <div class="form-container">
             <form action="https://google.com/search">
-            <input type="text" name="q">
-            <input type="submit" value="Google Search" aria-label="Google Search">
-            <input type="submit" value="I'm Feeling Lucky" aria-label="I'm Feeling Lucky">
+                <div class="input-container">
+                    <button class="search" type="submit">
+                        <div class="search-div">
+                            <span class="search-span">
+                                <svg focusable="false" height="20" width="20">
+                                    <path d="M 15.5 14 h -0.79 l -0.28 -0.27 A 6.471 6.471 0 0 0 16 9.5 A 6.5 6.5 0 1 0 9.5 16 c 1.61 0 3.09 -0.59 4.23 -1.57 l 0.27 0.28 v 0.79 l 5 4.99 L 20.49 19 l -4.99 -5 Z m -6 0 C 7.01 14 5 11.99 5 9.5 S 7.01 5 9.5 5 S 14 7.01 14 9.5 S 11.99 14 9.5 14 Z"></path>
+                                </svg>
+                            </span>
+                        </div>
+                    </button>
+                    <input class="input-field" type="text" name="q">
+                </div>
+                <div class="btn-container">
+                    <input class="button" type="submit" value="Google Search" aria-label="Google Search" name="btnK">
+                    <input class="button" type="submit" value="I'm Feeling Lucky" aria-label="I'm Feeling Lucky" name="btnI">   
+                </div>
             </form>
         </div>
     </body>
